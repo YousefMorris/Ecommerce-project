@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="E-Commerce.css">
+    <link rel="stylesheet" href="../CSSfiles/E-Commerce.css">
+</head>
+<body>
+    <div class="nav_container">
+        <a href="./E-Commerce.html" class="logo">Smarty Bee</a>
+        <div class="tabs">
+            <a href="./E-Commerce.html" >Home</a>
+            <a href="./about.html" >About</a>
+            <a href="./contactus.html" >Contact us</a>
+            <i id="myBtn" class="fa fa-shopping-cart"></i>
+        </div>
+    </div>
+    <div id="commercesection">
+
+    <br>
+    <br>
+    <br>
+    <br>
+  
+        <div id="slider">
+            <div id="innerslidercontent">
+                <img id="imagee" src="https://images.pexels.com/photos/5650021/pexels-photo-5650021.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""/>
+                <div id="sliderbuttons">
+                    <button onclick="showright()"><span><i class="fa-solid fa-backward"></i></span> Right</button>
+                    <button onclick="showleft()">Left <span><i class="fa-solid fa-forward"></i></span></button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="catinformation">
+            <p>Smart Bee Always Have Your Back <br>
+                just layback and choose online<br>
+                Smart Bee, has all what you need from A-Z in all your categories like phones, electonics, toys, games, fashion, Groceries.<br>
+               it will make your life simple because it have your time and always in your back to send you all what you need to your home<br>
+               all what you have to do is to select your needs from any category in your head and it will be added to the cart then <br>
+               all the way to your house , also we will be happy if you give us your feedback about the site and service and shippment.<br>
+               your life will be easy with us.<br>
+               hope you a beatiful time whopping with us online.<br>
+               select wisely.<br>
+               we are waiting for your everyday<br>      
+            </p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    <h2 id="catheader" ><span>Categories:</span></h2>
+    
+    <div id="categoriesbuttons">
+        <button id="phonesbtn"><span><i class="fa-solid fa-mobile"></i></span>  Phones</button>
+        <button id="electronicsbtn"><span><i class="fa-sharp fa-solid fa-laptop-medical"></i></span>  electronics</button>
+        <button id="fashionbtn"><span><i class="fa-sharp fa-solid fa-user-tie"></i></span> fashion</button>
+        <button id="grocerybtn"><span><i class="fa-solid fa-shopping-basket"></i></span>  grocery</button>
+        <button id="toysgamesbtn"><span><i class="fa-solid fa-gamepad"></i></span>  toys&games</button>
+    </div>
+    <!-- -----------------------------phone cards------------------------------ -->
+    <h3 id="mobilelabel">Mobile Phones: </h3>
+    <br>
+    <div id="phonescardshow" >
+        <div class = "card1" id = "card1">
+            <img id="cardimg" src="https://m.media-amazon.com/images/I/61elxy1AgFL.__AC_SX300_SY300_QL70_ML2_.jpg"/>
+            <button id="cardbtn"  onclick="addcart('card1')">add to cart</button>
+            <br>
+            <label id="labelprice">EGP 11,345</label>
+            <p id="desc" >Brand Name: 	OPPO<br>
+                Model Name:         	Oppo Reno 8T<br>
+                Wireless Provider:	    Unlocked for All Carriers<br>
+                Operating System:	    Android 9.0<br>
+                Cellular Technology: 	4G<br>
+                Memory Storage Capacity:256 GB<br>
+                Connectivity Technology:Bluetooth, Wi-Fi, USB<br>
+                Color:               	red<br>
+                Screen Size:        	6.43 Inches<br>
+                Wireless Network Technology:	LTE<br>
+                </p>
+        </div>
+        <div class = "card1" id="card2">
+            <img id="cardimg" src="https://m.media-amazon.com/images/I/61VuVU94RnL._AC_SX679_.jpg"/>
+            <button id="cardbtn" onclick="addcart('card2')">add to cart</button>
+            <br>
+            <label id="labelprice">EGP 33,645</label>
+            <p id="desc">Brand Name:	Apple<br>
+                Model Name:	iPhone 13 128GB Midnight<br>
+                Wireless Provider:	Unlocked<br>
+                Operating System:	iOS 15<br>
+                Cellular Technology:	5G<br>
+                Memory Storage Capacity:	128 GB<br>
+                Connectivity Technology:	Bluetooth, Wi-Fi, USB<br>
+                Color:	Midnight<br>
+                Screen Size:	6.1 Inches<br>
+                Wireless Network Technology:	LTE<br></p>
+        </div>
+        <div class = "card1" id="card3">
+            <img id="cardimg" src="https://m.media-amazon.com/images/I/51Z7noNbifL._AC_SY879_.jpg"/>
+            <button id="cardbtn" onclick="addcart('card3')">add to cart</button>
+            <br>
+            <label id="labelprice">EGP 6,095</label>
+            <p id="desc">Brand Name:	Xiaomi<br>
+                Model Name:	Xiaomi Redmi 10<br>
+                Wireless Provider:	Everything Everywhere<br>
+                Operating System:	Android 11.0<br>
+                Cellular Technology:	4G<br>
+                Memory Storage Capacity:	4GB<br>
+                Connectivity Technology:	Wi-Fi, USB<br>
+                Color:	Pebble White<br>
+                Screen Size:	6.5 Inches<br>
+                Wireless Network Technology:	UMTS, LTE<br></p>
+        </div>
+        <div class = "card1" id="card4">
+            <img id="cardimg" src="https://m.media-amazon.com/images/I/71NfkW1F91L._AC_SX679_.jpg"/>
+            <button id="cardbtn" onclick="addcart('card4')">add to cart</button>
+            <br>
+            <label id="labelprice">EGP 4,026</label>
+            <p id="desc">Brand Name:	realme<br>
+                Model Name:	Realme C30<br>
+                Wireless Provider:	Unlocked for All Carriers<br>
+                Operating System:	Android 11.0<br>
+                Cellular Technology:	4G<br>
+                Memory Storage Capacity:	32 GB<br>
+                Connectivity Technology:	Bluetooth, Wi-Fi, USB<br>
+                Color:	Lake Blue<br>
+                Screen Size:	6.5 Inches<br>
+                Wireless Network Technology:	GSM, LTE<br></p>
+        </div>
+        <div class = "card1" id="card5">
+            <img id="cardimg" src="https://m.media-amazon.com/images/I/613JGysovJL._AC_SX522_.jpg"/>
+            <button id="cardbtn" onclick="addcart('card5')">add to cart</button>
+            <br>
+            <label id="labelprice">EGP 6,999</label>
+            <p id="desc">Brand Name:	Xiaomi<br>
+                Model Name:	10 Mi<br>
+                Wireless Provider:	Unlocked for All Carriers<br>
+                Operating System:	MIUI 12<br>
+                Cellular Technology:	4G<br>
+                Memory Storage Capacity:	128 GB<br>
+                Connectivity Technology:	Bluetooth, Wi-Fi, USB<br>
+                Color:	Carbon Grey<br>
+                Screen Size:	6.5 Inches<br>
+                Wireless Network Technology:	GSM, LTE<br></p>
+        </div>
+        <div class = "card1" id="card6">
+            <img id="cardimg" src="https://m.media-amazon.com/images/I/612o96Hxi-L._AC_SY879_.jpg"/>
+            <button id="cardbtn" onclick="addcart('card6')">add to cart</button>
+            <br>
+            <label id="labelprice">EGP 11,999</label>
+            <p id="desc">Brand Name:	SAMSUNG<br>
+                Model Name:	Galaxy M52<br>
+                Wireless Provider:	Unlocked for All Carriers<br>
+                Operating System:	Android 11.0<br>
+                Cellular Technology:	5G<br>
+                Memory Storage Capacity:	128 GB<br>
+                Connectivity Technology:	Bluetooth, Wi-Fi, USB<br>
+                Color:	White<br>
+                Screen Size:	6.7 Inches<br>
+                Wireless Network Technology:	GSM, LTE<br></p>
+        </div>
+        <div class = "card1" id="card7">
+            <img id="cardimg" src="https://m.media-amazon.com/images/I/51yyzShHcjL._AC_SX679_.jpg"/>
+            <button id="cardbtn" onclick="addcart('card7')">add to cart</button>
+            <br>
+            <label id="labelprice">EGP 7,333</label>
+            <p id="desc">Brand Name:	realme<br>
+                Model Name:	Realme 9i<br>
+                Wireless Provider:	Unlocked<br>
+                Operating System:	Android 10.0<br>
+                Cellular Technology:	4G<br>
+                Memory Storage Capacity:	128 GB<br>
+                Connectivity Technology:	Bluetooth, Wi-Fi, USB<br>
+                Color:	Prism Balck<br>
+                Screen Size:	6.6 Inches<br>
+                Wireless Network Technology:	Wi-Fi<br></p>
+        </div>
+        <div class = "card1" id="card8">
+            <img id="cardimg" src="https://m.media-amazon.com/images/I/71xVQKgSq5L._AC_SX679_.jpg"/>
+            <button id="cardbtn" onclick="addcart('card8')">add to cart</button>
+            <br>
+            <label id="labelprice">EGP 5,828</label>
+            <p id="desc">Brand Name:	realme<br>
+                Model Name:	Realme C33<br>
+                Wireless Provider:	Unlocked for All Carriers<br>
+                Operating System:	Android 12.0<br>
+                Cellular Technology:	4G<br>
+                Memory Storage Capacity:	128 GB<br>
+                Connectivity Technology:	Bluetooth, Wi-Fi, USB<br>
+                Color:	black<br>
+                Screen Size:	6.5 Inches<br>
+                Wireless Network Technology:	LTE<br></p>
+        </div>
+        <div class = "card1" id="card9">
+            <img id="cardimg" src="https://m.media-amazon.com/images/I/61ZBAzOdPhL._AC_SX679_.jpg"/>
+            <button id="cardbtn" onclick="addcart('card9')">add to cart</button>
+            <br>
+            <label id="labelprice">EGP 4,025</label>
+            <p id="desc">Brand Name:	Infinix<br>
+                Model Name:	3.5 mm<br>
+                Wireless Provider:	Unlocked for All Carriers<br>
+                Operating System:	Android 11.0<br>
+                Cellular Technology:	4G<br>
+                Memory Storage Capacity:	32 GB<br>
+                Connectivity Technology:	Bluetooth, Wi-Fi, USB<br>
+                Color:	Polar black<br>
+                Screen Size:	6.6 Inches<br>
+                Wireless Network Technology:	Wi-Fi<br></p>
+        </div>
+        <div class = "card1" id="card10">
+            <img id="cardimg" src="https://m.media-amazon.com/images/I/617k+n0hd8L._AC_SX679_.jpg"/>
+            <button id="cardbtn" onclick="addcart('card10')">add to cart</button>
+            <br>
+            <label id="labelprice">EGP 4,944</label>
+            <p id="desc">Brand Name:	realme<br>
+                Model Name:	6941399059252<br>
+                Wireless Provider:	ALGAR<br>
+                Operating System:	Android 10.0<br>
+                Cellular Technology:	4G<br>
+                Memory Storage Capacity:	64 GB<br>
+                Connectivity Technology:	Bluetooth, Wi-Fi, USB<br>
+                Color:	black<br>
+                Screen Size:	6.4 Inches<br>
+                Wireless Network Technology:	LTE<br></p>
+        </div>
+        <div class = "card1" id="card11">
+            <img id="cardimg" src="https://m.media-amazon.com/images/I/71xU8w3fHJL._AC_SX679_.jpg"/>
+            <button id="cardbtn" onclick="addcart('card11')">add to cart</button>
+            <br>
+            <label id="labelprice">EGP 15,741</label>
+            <p id="desc">Brand Name:	Samsung<br>
+                Model Name:	Galaxy A54<br>
+                Wireless Provider:	Unlocked for All Carriers<br>
+                Operating System:	Android 10.0<br>
+                Cellular Technology:	4G<br>
+                Memory Storage Capacity:	256 GB<br>
+                Connectivity Technology:	Bluetooth, Wi-Fi<br>
+                Color:	Awesome Graphite<br>
+                Screen Size:	5.4 Inches<br>
+                Wireless Network Technology:	Wi-Fi<br></p>
+        </div>
+        <div class = "card1" id="card12">
+            <img id="cardimg" src="https://m.media-amazon.com/images/I/61iWInHK7jL._AC_SX679_.jpg"/>
+            <button id="cardbtn" onclick="addcart('card12')">add to cart</button>
+            <br>
+            <label id="labelprice">EGP 24,999</label>
+            <p id="desc">Brand Name:	Samsung<br>
+                Model Name:	Galaxy  S23<br>
+                Wireless Provider:	Unlocked for All Carriers<br>
+                Operating System:	Android 12.0<br>
+                Cellular Technology:	4G<br>
+                Memory Storage Capacity:	128 GB<br>
+                Connectivity Technology:	Bluetooth, Wi-Fi, USB<br>
+                Color:	Graphite<br>
+                Screen Size:	6.5 Inches<br>
+                Wireless Network Technology:	LTE<br></p>
+        </div>
+    </div>
+   
+
+
+<!-- -------------------------------electronics cards--------------------------- -->
+
+
+
+<h3 id="electronicslabel"> Electronics: </h3>
+<br>
+<div id="electronicscardshow" >
+    <div class = "card1"  id="card13">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/41GjbEkKgNL._AC_SX679_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card13')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 1,599</label>
+        <p id="desc">Brand Name: 	OPPO<br>
+            Model Name:         	Enco Air 2 Pro<br>
+            Headphones Form Factor:	In Ear<br>
+            Connectivity Technology:Wireless<br>
+            Special Features: 	Noise Cancellation<br>
+            Included Components: Cable<br>
+            Age Range Description: Adult<br>
+            Color:               	White<br>
+            Material:        	Plastic<br>
+            Wireless Communication Technology:	Bluetooth<br>
+            </p>
+    </div>
+    <div class = "card1" id="card14">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/51GvEUyJ6LL._AC_SY879_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card14')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 1,969</label>
+        <p id="desc">Brand Name: 	soundcore<br>
+            Model Name:         	Life P2i<br>
+            Headphones Form Factor:	In Ear<br>
+            Connectivity Technology:Wireless<br>
+            Special Features: 	Lightweight<br>
+            Included Components: Cable<br>
+            Age Range Description: Adult<br>
+            Color:               	Black<br>
+            Material:        	Plastic<br>
+            Wireless Communication Technology:	Bluetooth<br>
+            </p>
+    </div>
+    <div class = "card1" id="card15">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/51dI2B6VQdL._AC_SX679_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card15')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 1,669</label>
+        <p id="desc">Brand Name: 	soundcore<br>
+            Model Name:         	U2I<br>
+            Headphones Form Factor:	On Ear<br>
+            Connectivity Technology:Wireless<br>
+            Special Features: 	Microphone Included<br>
+            Included Components: Cable<br>
+            Age Range Description: Adult<br>
+            Color:               	Black<br>
+            Material:        	Plastic<br>
+            Wireless Communication Technology:	Bluetooth<br>
+            </p>
+    </div>
+    <div class = "card1" id="card16">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/81fphlmD9BL._AC_SX679_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card16')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 2,400</label>
+        <p id="desc">Brand Name: 	realme<br>
+            Model Name:         	RMA2007<br>
+            Speaker Type:	Component<br>
+            Recommended Uses For Product:For Computers<br>
+            Special Features: 	Bass Boost, Usb Port<br>
+            Compatible Devices: Laptop, Tablet, Smartphone<br>
+            Subwoofer Diameter: 5 Inches<br>
+            Color:               	white<br>
+            Mounting Type:        	Tabletop<br>
+            Controller Type:	Button Control<br>
+            </p>
+    </div>
+    <div class = "card1" id="card17">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/71M6HGemgWL._AC_SX522_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card17')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 11,089</label>
+        <p id="desc">Brand Name: 	realme<br>
+            Model Name:         	RMA2010<br>
+            Speaker Type:	Component<br>
+            Recommended Uses For Product:For Computers<br>
+            Special Features: 	Bass Boost, Usb Port<br>
+            Compatible Devices: Laptop, Tablet, Smartphone<br>
+            Subwoofer Diameter: 5 Inches<br>
+            Color:               	white<br>
+            Mounting Type:        	Tabletop<br>
+            Controller Type:	Button Control<br>
+            </p>
+    </div>
+    <div class = "card1" id="card18">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/715fCdexyJL._AC_SX679_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card18')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 3,999</label>
+        <p id="desc">Brand Name: 	realme<br>
+            Model Name:         	RMA2020<br>
+            Speaker Type:	Component<br>
+            Recommended Uses For Product:For Computers<br>
+            Special Features: 	Bass Boost, Usb Port<br>
+            Compatible Devices: Laptop, Tablet, Smartphone<br>
+            Subwoofer Diameter: 5 Inches<br>
+            Color:               	silver<br>
+            Mounting Type:        	Tabletop<br>
+            Controller Type:	Button Control<br>
+            </p>
+    </div>
+    <div class = "card1" id="card19">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/41LtXPa77NL._AC_SX679_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card19')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 12,999</label>
+        <p id="desc">Brand Name: 	realme<br>
+            Model Name:         	RMA2007<br>
+            Speaker Type:	Component<br>
+            Recommended Uses For Product:For Computers<br>
+            Special Features: 	Bass Boost, Usb Port<br>
+            Compatible Devices: Laptop, Tablet, Smartphone<br>
+            Subwoofer Diameter: 6 Inches<br>
+            Color:               	green<br>
+            Mounting Type:        	Tabletop<br>
+            Controller Type:	Button Control<br>
+            </p>
+    </div>
+    <div class = "card1" id="card20">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/61dEMVpJpJL._AC_SX522_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card20')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 1,129</label>
+        <p id="desc">Brand Name:	Joyroom<br>
+            Model Name:	JR FT5<br>
+            Style:	Modern<br>
+            Color:	blue<br>
+            Screen Size:	1.69 Inches<br>
+            Item Shape:	Round<br>
+            Target Audience:	Unisex Adults, Unisex Youth<br>
+            Compatible Devices:	Smartphone<br>
+            Band Material Type:	Silicone<br>
+            Band Color:	Black<br></p>
+    </div>
+    <div class = "card1" id="card21">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/61eZS47nnWL._AC_SX522_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card21')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 1,445</label>
+        <p id="desc">Brand Name:	Joyroom<br>
+            Model Name:	JR FT5<br>
+            Style:	Modern<br>
+            Color:	blue<br>
+            Screen Size:	1.69 Inches<br>
+            Item Shape:	Round<br>
+            Target Audience:	Unisex Adults, Unisex Youth<br>
+            Compatible Devices:	Smartphone<br>
+            Band Material Type:	Silicone<br>
+            Band Color:	Black<br></p>
+    </div>
+    <div class = "card1" id="card22">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/61PIb3vuoUS._AC_SX679_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card22')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 1,224</label>
+        <p id="desc">Brand Name:	Joyroom<br>
+            Color:	Black<br>
+            Compatible Devices:	Smartphones<br>
+            Compatible Phone Models:	Smartphones<br>
+            Mounting Type:	Vent<br>
+            Special Features:	Rotatable<br>
+            Material:	Silicone<br>
+            Item Dimensions:	11.4 x 6.9 x 9.9 centimeters<br>
+            Item Weight:	3.4 Ounces<br></p>
+    </div>
+    <div class = "card1" id="card23">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/71hNugRoW7L._SX522_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card23')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 1,199</label>
+        <p id="desc">Brand Name:	Joyroom<br>
+            Model Name:	JR FT5<br>
+            Style:	Modern<br>
+            Color:	blue<br>
+            Screen Size:	1.69 Inches<br>
+            Item Shape:	Round<br>
+            Target Audience:	Unisex Adults, Unisex Youth<br>
+            Compatible Devices:	Smartphone<br>
+            Band Material Type:	Silicone<br>
+            Band Color:	Black<br></p>
+    </div>
+    <div class = "card1" id="card24">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/61QhXtVdc3L._AC_SX679_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card24')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 1,103</label>
+        <p id="desc">Brand Name: 	realme<br>
+            Model Name:         	RMA2020<br>
+            Speaker Type:	Component<br>
+            Recommended Uses For Product:For Computers<br>
+            Special Features: 	Bass Boost, Usb Port<br>
+            Compatible Devices: Laptop, Tablet, Smartphone<br>
+            Subwoofer Diameter: 5 Inches<br>
+            Color:               	silver<br>
+            Mounting Type:        	Tabletop<br>
+            Controller Type:	Button Control<br>
+            </p>
+    </div>
+</div>
+
+
+
+
+
+<!-- -------------------------------fashion cards--------------------------- -->
+
+
+
+<h3 id="fashionlabel"> Fashion: </h3>
+<br>
+<div id="fashioncardshow" >
+    <div class = "card1" id="card25">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/71WGN-b86eL._AC_SX679_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card25')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 1,345</label>
+        <p id="desc">Brand : Other.................<br>
+            Color : White<br>
+            Material : Cotton<br>
+            Type : null<br>
+            Targeted Group : Unisex<br>
+            Pattern : Check<br>            
+        </p>
+    </div>
+    <div class = "card1" id="card26">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/61QxMOl4plL._AC_SX569_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card26')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 3,645</label>
+        <p id="desc">Brand : Other................<br>
+            Color : black<br>
+            Material : Cotton<br>
+            Type : Machine Wash...<br>
+            Targeted Group : Unisex<br>
+            Pattern : Checked<br>            
+        </p>
+    </div>
+    <div class = "card1" id="card27">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/81bYCz3RXFL._AC_SX569_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card27')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 9,095</label>
+        <p id="desc">Brand : Other.................<br>
+            Color : White<br>
+            Material : Cotton<br>
+            Type : Machine Wash...<br>
+            Targeted Group : Unisex<br>
+            Pattern : Checked<br>            
+        </p>
+    </div>
+    <div class = "card1" id="card28">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/61NLOgfGUIL._AC_SX679_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card28')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 4,026</label>
+        <p id="desc">Brand : Other................<br>
+            Color : green<br>
+            Material : Cotton<br>
+            Type : Machine Wash...<br>
+            Targeted Group : Unisex<br>
+            Pattern : Checked<br>            
+        </p>
+    </div>
+    <div class = "card1" id="card29">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/618CnWa05qL._AC_SX569_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card29')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 6,999</label>
+        <p id="desc">Brand : Other.................<br>
+            Color : yellow<br>
+            Material : Cotton<br>
+            Type : handhandhandhand Wash...<br>
+            Targeted Group : Unisex<br>
+            Pattern : Checked<br>            
+        </p>
+    </div>
+    <div class = "card1" id="card30">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/513bie3TRNL._AC_SY741_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card30')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 1,999</label>
+        <p id="desc">Brand : Other.................<br>
+            Color : White<br>
+            Material : Cotton<br>
+            Type : handhandhandhand Wash...<br>
+            Targeted Group : Unisex<br>
+            Pattern : Checked<br>            
+        </p>
+    </div>
+    <div class = "card1" id="card31">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/617WetbRWpL._AC_SX679_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card31')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 17,333</label>
+        <p id="desc">Brand : Other.................<br>
+            Color : White<br>
+            Material : Cotton<br>
+            Type : handhandhandhand Wash...<br>
+            Targeted Group : Unisex<br>
+            Pattern : Checked<br>            
+        </p>
+    </div>
+    <div class = "card1" id="card32">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/91nOlQruJFL._AC_UL480_FMwebp_QL65_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card32')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 15,828</label>
+        <p id="desc">Brand : Other................<br>
+            Color : White<br>
+            Material : Cotton<br>
+            Type : handhandhandhand Wash...<br>
+            Targeted Group : Unisex<br>
+            Pattern : Checked<br>            
+        </p>
+    </div>
+    <div class = "card1" id="card33">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/81wKwrQlxeL._AC_SX575_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card33')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 4,025</label>
+        <p id="desc">Brand : Other................<br>
+            Color : White<br>
+            Material : Cotton<br>
+            Type : handhandhandhand Wash...<br>
+            Targeted Group : Unisex<br>
+            Pattern : Checked<br>            
+        </p>
+    </div>
+    <div class = "card1" id="card34">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/615A1vtmqKL._AC_SY695_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card34')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 4,944</label>
+        <p id="desc">Brand : Other................<br>
+            Color : White<br>
+            Material : Cotton<br>
+            Type : handhandhandhand Wash...<br>
+            Targeted Group : Unisex<br>
+            Pattern : Checked<br>            
+        </p>
+    </div>
+    <div class = "card1" id="card35">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/81s7gJ9UgQL._AC_SX695_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card35')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 5,741</label>
+        <p id="desc">Brand : Other................<br>
+            Color : White<br>
+            Material : Cotton<br>
+            Type : handhandhandhand Wash...<br>
+            Targeted Group : Unisex<br>
+            Pattern : Checked<br>            
+        </p>
+    </div>
+    <div class = "card1" id="card36">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/71+PxfnlUZL._AC_UL480_QL65_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card36')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 4,999</label>
+        <p id="desc">Brand : Other................<br>
+            Color : White<br>
+            Material : Cotton<br>
+            Type : handhandhand Wash...<br>
+            Targeted Group : Unisex<br>
+            Pattern : Checked<br>            
+        </p>
+    </div>
+    <div class = "card1" id="card70">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/61oW8iu27rL._AC_SX679_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card70')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 24,999</label>
+        <p id="desc">Brand : Other................<br>
+            Color : White<br>
+            Material : Cotton<br>
+            Type : MachMachineMachineine Wash...<br>
+            Targeted Group : Unisex<br>
+            Pattern : Checked<br>            
+        </p>
+    </div>
+    <div class = "card1" id="card80">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/616tZqRgRnS._AC_SX679_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card80')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 24,999</label>
+        <p id="desc">Brand : Other................<br>
+            Color : White<br>
+            Material : Cotton<br>
+            Type : MachineMachineMachine Wash...<br>
+            Targeted Group : Unisex<br>
+            Pattern : Checked<br>            
+        </p>
+    </div>
+    <div class = "card1" id="card90">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/61JTwusG+lL._AC_UL480_QL65_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card90')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 24,999</label>
+        <p id="desc">Brand : Other.............<br>
+            Color : White<br>
+            Material : Cotton<br>
+            Type : MachineMachineMachine Wash...<br>
+            Targeted Group : Unisex<br>
+            Pattern : Checked<br>            
+        </p>
+    </div>
+    <div class = "card1" id="card100">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/71AL4Ed+iVL._AC_UL480_QL65_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card100')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 24,999</label>
+        <p id="desc">Brand : Other.............<br>
+            Color : White Color : White<br>
+            Material : Cotton<br>
+            Type : MachineMachinevMachine Wash...<br>
+            Targeted Group : Unisex<br>
+            Pattern : Checked<br>            
+        </p>
+    </div>
+</div>
+
+
+
+
+
+<!-- -------------------------------groceries cards--------------------------- -->
+
+
+
+<h3 id="grocerylabel"> Groceries: </h3>
+<br>
+<div id="grocerycardshow" >
+    <div class = "card1" id="card37">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/61xzGK02NML._AC_SX522_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card37')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 11,345</label>
+        <p id="desc">
+            Brand Name	Fogg<br>
+            Item Form	Lotion<br>
+            Scent	Adventure<br>
+            Material Type Free	Ammonia Free<br>
+            Number of Items	1<br>
+            Unit Count	50 mililitre<br>
+            Item Volume	50 Milliliters<br>
+            Target Use Body Part	Body<br></p>
+    </div>
+    <div class = "card1" id="card38">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/71+U+zbRMML._AC_SY741_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card38')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 33,645</label>
+        <p id="desc">
+            Brand Name	Fogg<br>
+            Item Form	Lotion<br>
+            Scent	Adventure<br>
+            Material Type Free	Ammonia Free<br>
+            Number of Items	1<br>
+            Unit Count	50 mililitre<br>
+            Item Volume	50 Milliliters<br>
+            Target Use Body Part	Body<br></p>
+    </div>
+    <div class = "card1" id="card39">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/51hL4mBdlmL._AC_SX679_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card39')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 6,095</label>
+        <p id="desc">
+            Brand Name	Fogg<br>
+            Item Form	Lotion<br>
+            Scent	Adventure<br>
+            Material Type Free	Ammonia Free<br>
+            Number of Items	1<br>
+            Unit Count	50 mililitre<br>
+            Item Volume	50 Milliliters<br>
+            Target Use Body Part	Body<br></p>
+    </div>
+    <div class = "card1" id="card40">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/61vOK4ZsXQL._AC_SX679_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card40')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 4,026</label>
+        <p id="desc">
+            Brand Name	Fogg<br>
+            Item Form	Lotion<br>
+            Scent	Adventure<br>
+            Material Type Free	Ammonia Free<br>
+            Number of Items	1<br>
+            Unit Count	50 mililitre<br>
+            Item Volume	50 Milliliters<br>
+            Target Use Body Part	Body<br></p>
+    </div>
+    <div class = "card1" id="card41">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/71UWlGa6DnL._AC_SX679_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card41')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 6,999</label>
+        <p id="desc">
+            Brand Name	Fogg<br>
+            Item Form	Lotion<br>
+            Scent	Adventure<br>
+            Material Type Free	Ammonia Free<br>
+            Number of Items	1<br>
+            Unit Count	50 mililitre<br>
+            Item Volume	50 Milliliters<br>
+            Target Use Body Part	Body<br></p>
+    </div>
+    <div class = "card1" id="card42">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/718+-YxpBQL._AC_SX679_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card42')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 11,999</label>
+        <p id="desc">
+            Brand Name	Fogg<br>
+            Item Form	Lotion<br>
+            Scent	Adventure<br>
+            Material Type Free	Ammonia Free<br>
+            Number of Items	1<br>
+            Unit Count	50 mililitre<br>
+            Item Volume	50 Milliliters<br>
+            Target Use Body Part	Body<br></p>
+    </div>
+    <div class = "card1" id="card43">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/51GpUgCuJrL._AC_SY741_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card43')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 7,333</label>
+        <p id="desc">
+            Brand Name	Fogg<br>
+            Item Form	Lotion<br>
+            Scent	Adventure<br>
+            Material Type Free	Ammonia Free<br>
+            Number of Items	1<br>
+            Unit Count	50 mililitre<br>
+            Item Volume	50 Milliliters<br>
+            Target Use Body Part	Body<br></p>
+    </div>
+    <div class = "card1" id="card44">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/61+tIv426rL._AC_SX679_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card44')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 5,828</label>
+        <p id="desc">
+            Brand Name	Fogg<br>
+            Item Form	Lotion<br>
+            Scent	Adventure<br>
+            Material Type Free	Ammonia Free<br>
+            Number of Items	1<br>
+            Unit Count	50 mililitre<br>
+            Item Volume	50 Milliliters<br>
+            Target Use Body Part	Body<br></p>
+    </div>
+    <div class = "card1" id="card45">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/71hxbtz6x9L._AC_SX522_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card45')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 4,025</label>
+        <p id="desc">
+            Brand Name	Fogg<br>
+            Item Form	Lotion<br>
+            Scent	Adventure<br>
+            Material Type Free	Ammonia Free<br>
+            Number of Items	1<br>
+            Unit Count	50 mililitre<br>
+            Item Volume	50 Milliliters<br>
+            Target Use Body Part	Body<br></p>
+    </div>
+    <div class = "card1" id="card46">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/81y2VZCsMAL._AC_SX522_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card46')">add to cart</button>
+        <br>
+        <label id="labelprice" >EGP 4,944</label>
+        <p id="desc">
+            Brand Name	Fogg<br>
+            Item Form	Lotion<br>
+            Scent	Adventure<br>
+            Material Type Free	Ammonia Free<br>
+            Number of Items	1<br>
+            Unit Count	50 mililitre<br>
+            Item Volume	50 Milliliters<br>
+            Target Use Body Part	Body<br></p>
+    </div>
+    <div class = "card1" id="card47">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/71cq8twH4wL._AC_SY879_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card47')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 15,741</label>
+        <p id="desc">
+            Brand Name	Fogg<br>
+            Item Form	Lotion<br>
+            Scent	Adventure<br>
+            Material Type Free	Ammonia Free<br>
+            Number of Items	1<br>
+            Unit Count	50 mililitre<br>
+            Item Volume	50 Milliliters<br>
+            Target Use Body Part	Body<br></p>
+    </div>
+    <div class = "card1" id="card48">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/61DkU46GqkL._AC_SX679_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card48')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 24,999</label>
+        <p id="desc">
+            Brand Name	Fogg<br>
+            Item Form	Lotion<br>
+            Scent	Adventure<br>
+            Material Type Free	Ammonia Free<br>
+            Number of Items	1<br>
+            Unit Count	50 mililitre<br>
+            Item Volume	50 Milliliters<br>
+            Target Use Body Part	Body<br></p>
+    </div>
+</div>
+
+
+
+<!-- -------------------------------toys&games cards--------------------------- -->
+
+
+
+<h3 id="toysgameslabel"> Toys And Games: </h3>
+<br>
+<div id="toysgamescardshow" >
+    <div class = "card1" id="card49">
+        <img id="cardimg" src="https://images-eu.ssl-images-amazon.com/images/I/41freGo0m5L._AC_SX184_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card49')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 11,345</label>
+        <p id="desc">Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            </p>
+    </div>
+    <div class = "card1" id="card50">
+        <img id="cardimg" src="https://images-eu.ssl-images-amazon.com/images/I/51j4fvZ16ZL._AC_SX184_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card50')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 33,645</label>
+        <p id="desc">Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            </p>
+    </div>
+    <div class = "card1" id="card51">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/61qrKvWK-vL._AC_UL480_QL65_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card51')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 6,095</label>
+        <p id="desc">Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            </p>
+    </div>
+    <div class = "card1" id="card52">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/71K2HjjncML._AC_UL480_QL65_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card52')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 4,026</label>
+        <p id="desc">Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            </p>
+    </div>
+    <div class = "card1" id="card53">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/51ldx5-x6UL._AC_UL480_QL65_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card53')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 6,999</label>
+        <p id="desc">Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            </p>
+    </div>
+    <div class = "card1" id="card54">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/61JvCIzJnNL._AC_UL480_QL65_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card54')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 11,999</label>
+        <p id="desc">Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            </p>
+    </div>
+    <div class = "card1" id="card55">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/51zeMKpsMOL._AC_UL480_QL65_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card55')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 7,333</label>
+        <p id="desc">Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            </p>
+    </div>
+    <div class = "card1" id="card56">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/61i+xUAJL2L._AC_UL480_QL65_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card56')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 5,828</label>
+        <p id="desc">Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            </p>
+    </div>
+    <div class = "card1" id="card57">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/91l87lrsOhL._AC_UL480_QL65_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card57')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 4,025</label>
+        <p id="desc">Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            </p>
+    </div>
+    <div class = "card1" id="card58">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/51cilCaCn3L._AC_UF226,226_FMjpg_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card58')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 4,944</label>
+        <p id="desc">Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            </p>
+    </div>
+    <div class = "card1" id="card59">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/41ImTasA8EL._AC_UF226,226_FMjpg_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card59')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 15,741</label>
+        <p id="desc">Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            </p>
+    </div>
+    <div class = "card1" id="card60">
+        <img id="cardimg" src="https://images-eu.ssl-images-amazon.com/images/I/4123-3NRKhL._AC_SX184_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card60')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 24,999</label>
+        <p id="desc">Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            </p>
+    </div>
+    <div class = "card1" id="card60">
+        <img id="cardimg" src="https://m.media-amazon.com/images/I/91l87lrsOhL._AC_UL480_QL65_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card60')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 24,999</label>
+        <p id="desc">Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            </p>
+    </div>
+    <div class = "card1" id="card60">
+        <img id="cardimg" src="https://images-eu.ssl-images-amazon.com/images/I/41freGo0m5L._AC_SX184_.jpg"/>
+        <button id="cardbtn" onclick="addcart('card60')">add to cart</button>
+        <br>
+        <label id="labelprice">EGP 24,999</label>
+        <p id="desc">Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Brand Name	Generic<br>
+            Material	Plastic<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            Item Weight	3.38 Kilograms with 2kg others<br>
+            </p>
+    </div>
+</div>
+</div>
+<!-- ------------------------shopping cart modal ---------------------------->
+
+<div id="myModal" class="modal" >
+
+  <div id="cartcontent" class="modal-content">
+    <span class="close">&times;</span>
+</div>
+<p id="totalprice" style="font-size: 20px;"></p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+
+
+<!-- ----------------------back to the top button----------------------->
+<button onclick="topFunction()" id="topbtn" ><i class="fas fa-long-arrow-up"></i></button>
+
+<!-------------------------footer----------------------------->
+<div id="myfooter">
+    <div id="icons">
+        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div id="footernav">
+        <ul>
+            <li><a href="E-Commerce.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="ourteam.html">Our Team</a></li>
+        </ul>
+    </div>
+    <div id="footerbottom">
+        <p>Copywrite &copy;2023; Designed by <span id="designer">youssef morris</span></p>
+    </div>
+</div>
+
+
+    <script src="../JSfiles/E-Commerce.js"></script>
+</body>
+</html>
